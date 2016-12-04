@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MobileAssignment</string>
+
+    <string name="key_prompt">Choose a key</string>
+
+    <string-array name="key_array">
+        <item>No key</item>
+        <item>A Major</item>
+        <item>A# Major</item>
+        <item>B Major</item>
+        <item>C Major</item>
+        <item>C# Major</item>
+        <item>D Major</item>
+        <item>D# Major</item>
+        <item>E Major</item>
+        <item>F Major</item>
+        <item>F# Major</item>
+        <item>G Major</item>
+        <item>G# Major</item>
+        <item>A Minor</item>
+        <item>A# Minor</item>
+        <item>B Minor</item>
+        <item>C Minor</item>
+        <item>C# Minor</item>
+        <item>D Minor</item>
+        <item>D# Minor</item>
+        <item>E Minor</item>
+        <item>F Minor</item>
+        <item>F# Minor</item>
+        <item>G Minor</item>
+        <item>G# Minor</item>
+    </string-array>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_recording_screen"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topButtons">
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/savebutton" />
+
+    <Button
+        android:text="Play/Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/playbutton" />
+
+    </LinearLayout>
+
+    <com.example.simon.mobileassignment.MusicVisualization
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/canvas"
+        android:layout_below="@+id/topButtons" />
+
+    <com.example.simon.mobileassignment.PianoKeys
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pianoKeys"
+        android:layout_below="@+id/canvas" />
+
+</RelativeLayout>

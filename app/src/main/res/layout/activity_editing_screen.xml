@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:text="Song Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songnametext"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_horizontal_margin"
+
+        android:layout_alignBaseline="@+id/songnameedittext"
+        android:layout_alignBottom="@+id/songnameedittext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/songnameedittext"
+
+        android:layout_toRightOf="@+id/songnametext" />
+
+    <TextView
+        android:text="Song Key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songkeytext"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_horizontal_margin"
+
+        android:layout_alignBaseline="@+id/songkeychooser"
+        android:layout_alignBottom="@+id/songkeychooser"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/songnametext"/>
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:inputType="textPersonName"
+        android:text="Key"
+        android:spinnerMode="dialog"
+        android:ems="10"
+        android:id="@+id/songkeychooser"
+        android:entries="@array/key_array"
+        android:layout_toRightOf="@+id/songkeytext"
+        android:layout_below="@+id/songnameedittext"/>
+
+    <TextView
+        android:text="BPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bpmtext"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_horizontal_margin"
+
+        android:layout_alignBaseline="@+id/bpmedittext"
+        android:layout_alignBottom="@+id/bpmedittext"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/songkeytext"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:inputType="textPersonName"
+        android:text="120"
+        android:ems="10"
+        android:id="@+id/bpmedittext"
+        android:layout_toRightOf="@+id/bpmtext"
+        android:layout_below="@+id/songkeychooser"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelbutton"
+        android:id="@+id/donebutton" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cancelbutton" />
+
+</RelativeLayout>
